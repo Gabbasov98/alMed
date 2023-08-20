@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О клинике
+        </a>
+        <a href="management.html" style="display: block; margin-bottom: 20px;">
+            Руководство клиники
+        </a>
+        <a href="licensies.html" style="display: block; margin-bottom: 20px;">
+            Лицензии и сертификаты
+        </a>
+        <a href="docs.html" style="display: block; margin-bottom: 20px;">
+            Нормативные документы
+        </a>
+        <a href="media.html" style="display: block; margin-bottom: 20px;">
+            СМИ о нас
+        </a>
+        <a href="social-projects.html" style="display: block; margin-bottom: 20px;">
+            Социальные проекты
+        </a>
+        <a href="social-project-item.html" style="display: block; margin-bottom: 20px;">
+            Страница проекта
+        </a>
+        <a href="vacancies.html" style="display: block; margin-bottom: 20px;">
+            Вакансии
+        </a>
+        <a href="vacancies.html" style="display: block; margin-bottom: 20px;">
+            Вакансия
+        </a>
+        <a href="reviews.html" style="display: block; margin-bottom: 20px;">
+            Отзывы
+        </a>
+        <a href="services.html" style="display: block; margin-bottom: 20px;">
+            Услуги
+        </a>
+        <a href="services2.html" style="display: block; margin-bottom: 20px;">
+            Страница раздела
+        </a>
+        <a href="services3.html" style="display: block; margin-bottom: 20px;">
+            Страница услуги
+        </a>
+        <a href="diagnostics.html" style="display: block; margin-bottom: 20px;">
+            Диагностика
+        </a>
+        <a href="services4.html" style="display: block; margin-bottom: 20px;">
+            Страница раздела диагностики
+        </a>
+        <a href="services5.html" style="display: block; margin-bottom: 20px;">
+            Страница диагностики
+        </a>
+        <a href="services6.html" style="display: block; margin-bottom: 20px;">
+            Лаборатория
+        </a>
+        <a href="services7.html" style="display: block; margin-bottom: 20px;">
+            Стационар
+        </a>
+        <a href="services8.html" style="display: block; margin-bottom: 20px;">
+            Операционная
+        </a>
+        <a href="services-search.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска по услугам
+        </a>
+        <a href="doctors.html" style="display: block; margin-bottom: 20px;">
+            Врачи
+        </a>
+        <a href="doctor-page.html" style="display: block; margin-bottom: 20px;">
+            Врач (Вариант, если информации мало)
+        </a>
+        <a href="doctor-page2.html" style="display: block; margin-bottom: 20px;">
+            Врач
+        </a>
+        <a href="prices.html" style="display: block; margin-bottom: 20px;">
+            Цены
+        </a>
+        <a href="sales.html" style="display: block; margin-bottom: 20px;">
+            Акции
+        </a>
+        <a href="sale-item.html" style="display: block; margin-bottom: 20px;">
+            Акция
+        </a>
+        <a href="live.html" style="display: block; margin-bottom: 20px;">
+            Live
+        </a>
+        <a href="live-item.html" style="display: block; margin-bottom: 20px;">
+            Запись
+        </a>
+        <a href="for-pacients.html" style="display: block; margin-bottom: 20px;">
+            Пациентам
+        </a>
+        <a href="insurance.html" style="display: block; margin-bottom: 20px;">
+            Страхование ДМС
+        </a>
+
+
+        <a href="tax.html" style="display: block; margin-bottom: 20px;">
+            Налоговый вычет
+        </a>
+        <a href="faq.html" style="display: block; margin-bottom: 20px;">
+            Подготовка к анализам
+            и исследованиям
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="conf.html" style="display: block; margin-bottom: 20px;">
+            Политика обработки персональных данных
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="callModal">
+            Заказать звонок
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="visitModal">
+            Запись на прием
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="questionModal">
+            Задать вопрос
+        </button>
+
+    </div>
+
+    <div class="modal" id="callModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#31374C" />
+                </svg>
+            </button>
+            <div class="modal__scroll">
+                <div class="m-form__top">
+                    <div class="text48 bold-text primary-text">
+                        Заказать звонок
+                    </div>
+                    <div class="text16 black70-text">
+                        Оставьте нам ваши контактные данные и мы вам перезвоним
+                    </div>
+                </div>
+                <div class="m-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Ваше имя">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="tel" placeholder="Контактный телефон">
+                    </fieldset>
+                    <div class="m-form__hint">
+                        <div class="text14 black70-text">
+                            Нажимая кнопку “Записаться на прием”, выдатете согласие на обработку персональных данных в соответствии с политикой конфиденциальности.
+                        </div>
+                    </div>
+                    <button class="m-form__btn m-btn m-btn-primary">
+                        <span>Записаться на прием</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="visitModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#31374C" />
+                </svg>
+            </button>
+            <div class="modal__scroll">
+                <div class="m-form__top">
+                    <div class="text48 bold-text primary-text">
+                        Запись на прием
+                    </div>
+                    <div class="text16 black70-text">
+                        Укажите свой номер телефона, мы перезвоним и подберём для вас удобное время приёма. Или позвоните нам сами — +7 (391) 234-64-21
+                    </div>
+                </div>
+                <div class="m-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Ваше имя">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="tel" placeholder="Контактный телефон">
+                    </fieldset>
+                    <div class="m-form__hint">
+                        <div class="text14 black70-text">
+                            Нажимая кнопку “Записаться на прием”, выдатете согласие на обработку персональных данных в соответствии с политикой конфиденциальности.
+                        </div>
+                    </div>
+                    <button class="m-form__btn m-btn m-btn-primary">
+                        <span>Записаться на прием</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="questionModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#31374C" />
+                </svg>
+            </button>
+            <div class="modal__scroll">
+                <div class="m-form__top">
+                    <div class="text48 bold-text primary-text">
+                        Задать вопрос
+                    </div>
+                </div>
+                <div class="m-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Ваше имя">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="tel" placeholder="Контактный телефон">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <textarea placeholder="Вопрос"></textarea>
+                    </fieldset>
+                    <div class="m-form__hint">
+                        <div class="text14 black70-text">
+                            Нажимая кнопку “Записаться на прием”, выдатете согласие на обработку персональных данных в соответствии с политикой конфиденциальности.
+                        </div>
+                    </div>
+                    <button class="m-form__btn m-btn m-btn-primary">
+                        <span>Задать вопрос</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="modal-backdrop show"></div> -->
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
