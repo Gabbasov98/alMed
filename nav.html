@@ -30,6 +30,15 @@
 <body class="m-page">
 
     <div class="wrapper" style="padding: 50px;">
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="buyModal">
+            Купить программу
+        </button>
+        <a href="check-up.html" style="display: block; margin-bottom: 20px;">
+            Чек-апы
+        </a>
+
+        <hr style="display: block; margin-bottom: 20px;">
+
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
@@ -141,6 +150,9 @@
         <a href="conf.html" style="display: block; margin-bottom: 20px;">
             Политика обработки персональных данных
         </a>
+
+
+
 
 
 
@@ -268,6 +280,45 @@
                     </div>
                     <button class="m-form__btn m-btn m-btn-primary">
                         <span>Задать вопрос</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="buyModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#31374C" />
+                </svg>
+            </button>
+            <div class="modal__scroll">
+                <div class="m-form__top">
+                    <div class="text48 bold-text">
+                        Купить программу
+                    </div>
+                    <div class="text16 black70-text">
+                        Оставьте нам ваши контактные данные и мы вам перезвоним
+                    </div>
+                </div>
+                <div class="m-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Ваше имя">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="tel" placeholder="Контактный телефон">
+                    </fieldset>
+                    <div class="m-form__hint">
+                        <div class="text14 black70-text">
+                            Нажимая кнопку “Купить программу”, выдатете согласие на обработку персональных данных в соответствии с
+                            <a href="" class="underline-text">политикой конфиденциальности</a>
+                            .
+                        </div>
+                    </div>
+                    <button class="m-form__btn m-btn m-btn-primary">
+                        <span>Купить программу</span>
                     </button>
                 </div>
             </div>
